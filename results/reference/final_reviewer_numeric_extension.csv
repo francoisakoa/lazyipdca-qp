@@ -1,0 +1,14 @@
+metric,value
+lazy_kkt_failures,10
+lazy_kkt_fail_stationarity,8
+lazy_kkt_fail_complementarity,7
+lazy_kkt_fail_feasibility,0
+lazy_kkt_dca_stabilization,6
+profile_lazy_eligible,34/37
+profile_ipopt_eligible,16/37
+profile_qpalm_eligible,15/37
+profile_ipopt_ineligible_due_objective,21
+profile_qpalm_ineligible_due_objective,22
+rho1_feasible_kkt,10/10;6/10
+rho2_feasible_kkt,10/10;6/10
+rho5_feasible_kkt,10/10;6/10

@@ -1,0 +1,85 @@
+% Numerical tables suitable for supplement.
+
+\begin{table}[t]
+\centering
+\caption{Local one-factor sensitivity summary on five representative instances. ``Changed'' counts instances whose numerical outcome differs from the baseline according to the campaign post-processing.}
+\label{tab:sensitivity-summary}
+\begin{tabular}{llrr}
+\toprule
+Variant & Axis & Changed & Feasible\\
+\midrule
+Lanczos 30 & Lanczos max. iterations & 0/5 & 5/5\\
+Lanczos 120 & Lanczos max. iterations & 0/5 & 5/5\\
+$\rho$ trial every 1 & Scalar-decrease period & 4/5 & 5/5\\
+$\rho$ trial every 5 & Scalar-decrease period & 4/5 & 5/5\\
+Max atoms 100 & Atom cap & 0/5 & 5/5\\
+Max atoms 1000 & Atom cap & 0/5 & 5/5\\
+Residual safety 0.5 & Lanczos residual safety & 0/5 & 5/5\\
+Residual safety 2.0 & Lanczos residual safety & 0/5 & 5/5\\
+Reward weights $\times0.75$ & Composite score & 0/5 & 5/5\\
+Reward weights $\times1.25$ & Composite score & 0/5 & 5/5\\
+Penalty weights $\times0.75$ & Composite score & 0/5 & 5/5\\
+Penalty weights $\times1.25$ & Composite score & 0/5 & 5/5\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Binding atom-cap experiment with $\texttt{max-atoms}=4$.}
+\label{tab:rankcap4}
+\begin{tabular}{lrrrr}
+\toprule
+Instance & Rank & Lanczos calls & Stationarity & Wall (s)\\
+\midrule
+NCVXQP1\_n1000   & 4 & 37  & $5.15\times10^{-13}$ & 0.350\\
+BLOWEYA\_n2002   & 0 & 2   & $5.39\times10^{-9}$  & 1.414\\
+STNQP1\_n8193    & 3 & 261 & $3.14\times10^{-13}$ & 3.073\\
+BLOCKQP3\_n10010 & 4 & 56  & $4.59\times10^{-5}$  & 9.847\\
+NCVXQP3\_n10000  & 4 & 37  & $1.35\times10^{-6}$  & 65.064\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Certificate-matched QPALM results by LCP family. The wall time shown is the sum of the selected runs in the current certificate-matched table, not the cumulative cost of all tightening attempts.}
+\label{tab:lcp72-qpalm}
+\begin{tabular}{lrrr}
+\toprule
+Family & Certified & Cases & Selected wall (s)\\
+\midrule
+LCP6  & 3  & 3  & 8.391\\
+LCP7  & 13 & 13 & 9388.624\\
+LCP8  & 12 & 13 & 1013.795\\
+LCP9  & 3  & 3  & 1.219\\
+LCP10 & 11 & 11 & 1038.685\\
+LCP11 & 13 & 13 & 65.584\\
+LCP12 & 13 & 13 & 70.441\\
+LCP13 & 3  & 3  & 1.763\\
+\midrule
+Total & 71 & 72 & ---\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{QPALM failures and feasible/non-KKT cases on the 17-instance large-scale panel.}
+\label{tab:qpalm-xl17-failures}
+\begin{tabular}{llrrr}
+\toprule
+Instance & Classification & Feasibility & Stationarity & Wall (s)\\
+\midrule
+NCVXBQP3\_n100000 & feasible/non-KKT & $1.62\times10^{-8}$ & $4.09\times10^{-4}$ & 4083.8\\
+NCVXQP1\_n100000  & infeasible & $1.76\times10^{-3}$ & $1.00$ & 36385.6\\
+NCVXQP3\_n100000  & infeasible & $4.77$ & $1.00$ & 36362.5\\
+NCVXQP5\_n100000  & infeasible & $2.50$ & $5.55\times10^{-1}$ & 7280.7\\
+NCVXQP6\_n100000  & infeasible & $1.01\times10^{-2}$ & $1.01$ & 36220.8\\
+NCVXQP9\_n100000  & infeasible & $5.41\times10^{-2}$ & $1.00$ & 36031.7\\
+BLOWEYA\_n100002  & infeasible & $3.23\times10^{-6}$ & $2.86\times10^{-1}$ & 938.6\\
+BLOWEYC\_n100002  & feasible/non-KKT & $1.97\times10^{-7}$ & $1.17\times10^{-5}$ & 862.8\\
+BLOCKQP3\_n100010 & feasible/non-KKT & $2.82\times10^{-8}$ & $7.57\times10^{-4}$ & 822.3\\
+\bottomrule
+\end{tabular}
+\end{table}

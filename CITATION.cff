@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying article."
+title: "IPDCA-QP: LazyIPDCA for large-scale nonconvex quadratic programming"
+type: software
+authors:
+  - family-names: Akoa
+    given-names: François Bertrand
+repository-code: "https://github.com/francoisakoa/ipdca-qp"
+version: "0.18.1-v275"
+date-released: 2026-09-08
+preferred-citation:
+  type: article
+  title: "Adaptive Low-Rank DC Regularization for Large-Scale Nonconvex Quadratic Programming"
+  authors:
+    - family-names: Akoa
+      given-names: François Bertrand

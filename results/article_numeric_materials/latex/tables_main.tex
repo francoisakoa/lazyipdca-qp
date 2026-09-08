@@ -1,0 +1,95 @@
+% Numerical tables for main article.
+% Requires \usepackage{booktabs}
+
+\begin{table}[t]
+\centering
+\caption{Aggregate results on the 37-instance CUTEst panel. The KKT column reports the common first-order test at tolerance $10^{-6}$.}
+\label{tab:cutest37-aggregate}
+\begin{tabular}{lrrrr}
+\toprule
+Solver & Total wall time (s) & Time / LazyIPDCA & KKT & Median time/iter. (s)\\
+\midrule
+LazyIPDCA (C) & 381.251 & 1.00 & 27/37 & $8.719\times10^{-3}$\\
+Ipopt          & 3428.100 & 8.99 & 28/37 & $2.301\times10^{-2}$\\
+QPALM          & 6412.156 & 16.82 & 35/37 & $9.270\times10^{-4}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Objective comparison on the 37-instance CUTEst panel. Ties use the relative objective tolerance $10^{-4}$ and only jointly feasible runs are compared.}
+\label{tab:cutest37-objectives}
+\begin{tabular}{lrrr}
+\toprule
+Comparison & LazyIPDCA better & Comparator better & Ties\\
+\midrule
+LazyIPDCA vs.\ Ipopt & 21 & 3 & 13\\
+LazyIPDCA vs.\ QPALM & 20 & 3 & 14\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{QPALM runs failing the common $10^{-6}$ KKT post-check on CUTEst37. Both failures are caused by stationarity rather than feasibility or complementarity.}
+\label{tab:qpalm-kkt-failures}
+\begin{tabular}{lrrr}
+\toprule
+Instance & Feasibility & Stationarity & Complementarity\\
+\midrule
+NCVXBQP3\_n10000 & $5.33\times10^{-15}$ & $1.81\times10^{-6}$ & $7.16\times10^{-12}$\\
+BLOCKQP3\_n10010  & $1.90\times10^{-9}$  & $1.46\times10^{-4}$ & $1.61\times10^{-12}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Selected values of the three-solver wall-time performance profile. The entry is the number of the 37 instances solved within a factor $\tau$ of the fastest eligible solver.}
+\label{tab:performance-profile-selected}
+\begin{tabular}{rrrr}
+\toprule
+$\tau$ & LazyIPDCA & Ipopt & QPALM\\
+\midrule
+1   & 30 & 3  & 4\\
+2   & 31 & 8  & 5\\
+5   & 33 & 9  & 7\\
+10  & 33 & 13 & 9\\
+20  & 33 & 15 & 13\\
+100 & 34 & 15 & 15\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{QPALM classification on the 17-instance large-scale panel under the common feasibility and KKT checks.}
+\label{tab:qpalm-xl17-summary}
+\begin{tabular}{lr}
+\toprule
+Classification & Count\\
+\midrule
+KKT pass & 8/17\\
+Feasible but non-KKT & 3/17\\
+Infeasible & 6/17\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Timing reproducibility of LazyIPDCA C over ten repetitions.}
+\label{tab:timing-reproducibility}
+\begin{tabular}{lrrrr}
+\toprule
+Instance & Median (s) & CV (\%) & Min (s) & Max (s)\\
+\midrule
+NCVXQP1\_n1000   & 0.321 & 1.24 & 0.317 & 0.329\\
+BLOWEYA\_n2002   & 1.260 & 0.41 & 1.257 & 1.273\\
+STNQP1\_n8193    & 2.756 & 0.29 & 2.742 & 2.768\\
+BLOCKQP3\_n10010 & 13.000 & 0.34 & 12.961 & 13.109\\
+NCVXQP3\_n10000  & 171.909 & 0.39 & 171.012 & 172.906\\
+\bottomrule
+\end{tabular}
+\end{table}

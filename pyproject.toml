@@ -1,0 +1,20 @@
+[build-system]
+requires = ["scikit-build-core>=0.9", "pybind11>=2.12"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "lazyipdca"
+version = "0.18.1"
+description = "Interior-point DC algorithm for large-scale nonconvex sparse QP with lazy inertia-certified convexification (MUMPS+METIS)"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "scipy>=1.8"]
+
+[tool.scikit-build]
+cmake.version = ">=3.18"
+wheel.packages = ["lazyipdca"]
+build-dir = "build/{wheel_tag}"
+
+[tool.scikit-build.cmake.define]
+LAZYIPDCA_PYTHON = "ON"
+LAZYIPDCA_TESTS = "OFF"
+LAZYIPDCA_CUTEST = "OFF"

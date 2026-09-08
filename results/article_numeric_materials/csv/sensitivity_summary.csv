@@ -1,0 +1,14 @@
+variant,axis,setting,runs,changed_vs_base,feasible,median_time_s
+BASE,baseline,reported,5,0,5,3.066424892982468
+LANCZOS_30,lanczos_maxit,30,5,0,5,2.748739561997354
+LANCZOS_120,lanczos_maxit,120,5,0,5,2.740510549978353
+RHO_TRIAL_1,rho_trial_every,1,5,4,5,2.606186592951417
+RHO_TRIAL_5,rho_trial_every,5,5,4,5,2.78217357408721
+MAX_ATOMS_100,max_atoms,100,5,0,5,2.746710096951574
+MAX_ATOMS_1000,max_atoms,1000,5,0,5,2.7492478149943054
+RESIDUAL_SAFETY_0p5,rho_lanczos_residual_safety,0.5,5,0,5,2.7421429419191554
+RESIDUAL_SAFETY_2p0,rho_lanczos_residual_safety,2.0,5,0,5,2.734495826996863
+SCORE_REWARD_0p75,composite_score_rewards,x0.75,5,0,5,2.749100640998222
+SCORE_REWARD_1p25,composite_score_rewards,x1.25,5,0,5,2.758906839066185
+SCORE_PENALTY_0p75,composite_score_penalties,x0.75,5,0,5,2.75547714298591
+SCORE_PENALTY_1p25,composite_score_penalties,x1.25,5,0,5,2.759171192999929

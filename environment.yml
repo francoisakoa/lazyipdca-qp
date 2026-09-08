@@ -1,0 +1,25 @@
+name: ipdca-qp
+channels:
+  - conda-forge
+channel_priority: strict
+dependencies:
+  - python=3.10
+  - pip
+  - cmake>=3.18
+  - ninja
+  - cxx-compiler
+  - c-compiler
+  - fortran-compiler
+  - eigen
+  - mumps-seq
+  - metis
+  - openblas
+  - pybind11>=2.12
+  - numpy=2.2.6
+  - scipy=1.15.2
+  - pandas
+  - matplotlib
+  - meson
+  - pkg-config
+  - pip:
+      - pycutest==1.8.2

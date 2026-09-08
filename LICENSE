@@ -1,0 +1,10 @@
+Copyright (c) 2026 François Bertrand Akoa. All rights reserved.
+
+The LazyIPDCA source code in this repository is provided for research,
+verification, and reproducibility of the accompanying numerical study.
+No broader redistribution or relicensing rights are granted by this notice.
+
+Third-party components retain their own licenses. The bundled QDLDL files are
+governed by the license included in third_party/qdldl/qdldl_LICENSE. External
+packages and benchmark collections are not redistributed here and remain
+subject to their upstream terms.

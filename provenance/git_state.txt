@@ -1,0 +1,1 @@
+Source tree is not a Git checkout.

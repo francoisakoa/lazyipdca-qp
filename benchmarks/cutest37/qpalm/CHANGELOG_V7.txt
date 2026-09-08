@@ -1,0 +1,11 @@
+CUTEst37 QPALM/OSQP v7
+
+Fixes the v6 BLOWEY validation bug:
+- BLOWEYA/B/C historical tags remain *_n2002 for table compatibility.
+- Their exact SIF parameter is N=2000, which decodes to n=4002,m=2002.
+- Post-decode validation now checks explicit expected (n,m) per overridden family,
+  rather than comparing decoded n to the historical manifest target_n label.
+- STNQP1/2 expected dims: n=8193,m=4095.
+- BLOCKQP1/2/3 expected dims: n=10010,m=5001.
+
+Numerical solver/KKT logic is unchanged from v6/v5 native-dual implementation.

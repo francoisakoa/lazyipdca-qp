@@ -1,0 +1,8 @@
+cutest37_qpalm_osqp_v3_native_dual
+
+- KKT primary dual source: native solver multipliers (QPALM solution.y, OSQP res.y).
+- Active-set bounded least-squares dual recovery retained only as fallback/diagnostic.
+- Added stat_abs_recovered and stat_rel_recovered columns.
+- QPALM eps_abs_in / eps_rel_in / inner_max_iter are no longer overridden by default.
+- Optional --qpalm-inner-tol and --qpalm-inner-max-iter remain available for sensitivity tests.
+- Final QPALM eps_abs, eps_rel, eps_prim_inf, eps_dual_inf and nonconvex remain explicit.

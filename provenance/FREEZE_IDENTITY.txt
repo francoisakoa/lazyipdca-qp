@@ -1,0 +1,15 @@
+NAME=lazyipdca_QP_v275_C_AMRS_REFERENCE_20260901_170216
+DATE=2026-09-01T17:02:16+02:00
+HOST=fakoa-Amd-Trx50
+SOURCE=/data/projects/IPDCA_QP/lazyipdca_adaptive_early_v275_source
+BUILD=/data/projects/IPDCA_QP/lazyipdca_adaptive_early_v275_source/build_cutest_adaptive_early_v275
+BINARY=/data/projects/IPDCA_QP/lazyipdca_adaptive_early_v275_source/build_cutest_adaptive_early_v275/lazyipdca_cutest
+CONDA_ENV=lazydca_atom_oracle
+CONDA_PREFIX=/home/fakoa/anaconda3/envs/lazydca_atom_oracle
+
+Linux fakoa-Amd-Trx50 7.0.0-30-generic #30~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:27:52 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+cmake version 3.28.3
+1.13.2

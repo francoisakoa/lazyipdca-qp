@@ -1,0 +1,7 @@
+v4_fixed_cutest_decode
+
+- Preserve v3 native-dual KKT post-check.
+- QPNBOEI2, QPNBOEI1 and QPNSTAIR are decoded as fixed-size CUTEst models.
+- Manifest target_n remains the benchmark tag only for those fixed models and is not passed as SIF parameter N.
+- No change to QPALM/OSQP numerical settings or KKT tolerances.
+- Resume remains supported so an interrupted/partial v3 campaign can be completed in the same OUT directory without rerunning completed solver JSONs.

@@ -1,0 +1,16 @@
+/build*/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+pycutest_cache/
+decode/
+results/runs/
+*.log
+.DS_Store
